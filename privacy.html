@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Pickly AI</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#2ACAC6',
+                            dark: '#20A8A5',
+                            light: '#E0F7F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition">
+                    <div class="text-brand text-2xl mr-2">
+                        <i class="fa-solid fa-ghost"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-gray-900">Pickly<span class="text-brand text-xs align-top">AI</span></span>
+                </a>
+                <a href="index.html" class="text-gray-500 hover:text-brand text-sm font-medium">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> Volver al inicio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-28 pb-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+            
+            <header class="mb-10 border-b border-gray-100 pb-8">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Política de Privacidad</h1>
+                <p class="text-gray-500">Última actualización: <span id="date">Octubre 2023</span></p>
+            </header>
+
+            <div class="space-y-10 text-gray-700 leading-relaxed">
+                
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                        INFORMACIÓN QUE RECOPILAMOS
+                    </h2>
+                    
+                    <div class="pl-11 space-y-6">
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">1.1. Datos personales</h3>
+                            <p>Pickly no recopila, almacena ni procesa datos personales del usuario. No existe registro, inicio de sesión ni creación de cuentas.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">1.2. Imágenes</h3>
+                            <p class="mb-2">Para realizar el análisis y puntuación de fotografías, el usuario selecciona entre 2 y 5 imágenes desde su galería. El funcionamiento es el siguiente:</p>
+                            <ul class="list-disc list-inside space-y-1 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <li>Las imágenes seleccionadas se envían temporalmente a nuestro servidor para procesarlas mediante un modelo de IA.</li>
+                                <li>Tras generar la puntuación y devolver el resultado al usuario: <strong>Las imágenes se eliminan automáticamente e inmediatamente del servidor.</strong></li>
+                                <li>No se almacenan, registran ni conservan copias.</li>
+                                <li>La Aplicación tampoco conserva las imágenes más allá del proceso activo de análisis.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">1.3. Permisos del dispositivo</h3>
+                            <p>La Aplicación puede solicitar:</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Acceso completo o limitado a la galería de fotos, exclusivamente para permitir la selección de imágenes.</li>
+                                <li>Permiso de notificaciones, si el usuario desea habilitarlas.</li>
+                            </ul>
+                            <p class="mt-2 text-sm text-gray-500">Estos permisos pueden modificarse o revocarse en cualquier momento desde los ajustes del dispositivo.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">1.4. Datos técnicos o de uso</h3>
+                            <p>Pickly no recopila datos técnicos, identificadores del dispositivo, estadísticas de uso, historial de actividad, ni utiliza herramientas de analítica o seguimiento.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">1.5. Información de fallos</h3>
+                            <p>Pickly no integra herramientas de análisis de errores o crash analytics, por lo que no se registran datos sobre fallos.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                        FINALIDAD DEL TRATAMIENTO
+                    </h2>
+                    <div class="pl-11">
+                        <p class="mb-4">La única finalidad del tratamiento de datos es:</p>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Procesar las fotografías seleccionadas por el usuario mediante un modelo de inteligencia artificial alojado en nuestro servidor.</li>
+                            <li>Devolver al usuario una puntuación y recomendación basada en ese procesamiento.</li>
+                        </ul>
+                        <p class="font-medium">No se da ningún otro uso a las imágenes ni se emplean para entrenar modelos, mejorar servicios o realizar análisis estadísticos. No se genera ningún tipo de perfil del usuario.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                        CUSTODIA, CESIÓN Y COMUNICACIÓN DE DATOS
+                    </h2>
+                    <div class="pl-11">
+                        <p>No cedemos, compartimos ni vendemos imágenes ni datos personales a terceros. Las fotografías se envían únicamente a nuestro propio servidor, estrictamente para posibilitar la funcionalidad principal de la Aplicación. No se transmiten imágenes a terceros proveedores, plataformas de IA externas ni servicios ajenos al proyecto.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
+                        PROCESAMIENTO DE IMÁGENES
+                    </h2>
+                    <div class="pl-11 space-y-6">
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">4.1. Procesamiento en servidor</h3>
+                            <p class="mb-2">El análisis de las imágenes se realiza en un servidor controlado por nosotros. Se aplica el siguiente flujo:</p>
+                            <ol class="list-decimal list-inside space-y-1 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <li>El usuario selecciona las fotografías.</li>
+                                <li>La Aplicación las envía de forma cifrada al servidor.</li>
+                                <li>El servidor procesa las imágenes y genera la puntuación.</li>
+                                <li>Se devuelve el resultado al usuario.</li>
+                                <li>Las imágenes son eliminadas definitivamente del servidor al finalizar la operación.</li>
+                            </ol>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">4.2. Retención</h3>
+                            <p>Tiempo de conservación de imágenes: <strong class="text-brand-dark">0 minutos</strong>. Una vez devuelto el resultado, las fotografías se eliminan de forma irreversible.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">4.3. Uso prohibido</h3>
+                            <p>Las fotografías no se utilizan para:</p>
+                            <ul class="list-disc list-inside mt-2 text-sm space-y-1 text-gray-600">
+                                <li>Entrenar modelos de IA</li>
+                                <li>Construir bases de datos</li>
+                                <li>Realizar análisis estadísticos</li>
+                                <li>Mejorar algoritmos</li>
+                                <li>Actividades publicitarias o comerciales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
+                        SEGURIDAD DE LA INFORMACIÓN
+                    </h2>
+                    <div class="pl-11">
+                        <p class="mb-4">Aplicamos medidas técnicas y organizativas para proteger la confidencialidad e integridad de las imágenes procesadas. Entre ellas:</p>
+                        <ul class="list-disc list-inside mb-4 font-medium">
+                            <li>Transmisión cifrada (HTTPS/SSL)</li>
+                            <li>Eliminación automática tras el análisis</li>
+                            <li>Servidores seguros y protegidos</li>
+                            <li>Ausencia total de almacenamiento permanente</li>
+                        </ul>
+                        <p class="text-sm text-gray-500">Sin embargo, el usuario debe tener en cuenta que ninguna transmisión de datos por Internet es completamente infalible, aunque implementamos las medidas necesarias para minimizar riesgos.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">6</span>
+                        DERECHOS DEL USUARIO
+                    </h2>
+                    <div class="pl-11">
+                        <p class="mb-2">El usuario tiene derecho a:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Revocar permisos de acceso a fotos o notificaciones en cualquier momento.</li>
+                            <li>Eliminar la Aplicación cuando lo desee.</li>
+                            <li>Controlar completamente sus propias imágenes, ya que no conservamos ninguna copia.</li>
+                        </ul>
+                        <p>Dado que no almacenamos datos personales, no existen datos susceptibles de acceso, rectificación o supresión en virtud del RGPD.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">7</span>
+                        SERVICIOS Y ENLACES DE TERCEROS
+                    </h2>
+                    <div class="pl-11">
+                        <p>Pickly no incorpora enlaces externos ni integra servicios de terceros que procesen datos del usuario, salvo el propio servidor de análisis operado por nosotros. No se utilizan servicios como Firebase, Mixpanel, RevenueCat, Superwall ni similares.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">8</span>
+                        CAMBIOS EN ESTA POLÍTICA
+                    </h2>
+                    <div class="pl-11">
+                        <p>Podemos actualizar esta Política de Privacidad para adaptarnos a cambios legales, técnicos o funcionales. La fecha de última actualización indica la vigencia de la versión actual.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center">
+                        <span class="bg-brand-light text-brand rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">9</span>
+                        CONTACTO
+                    </h2>
+                    <div class="pl-11">
+                        <p class="mb-2">Para dudas o consultas sobre esta Política de Privacidad, puede contactarnos en:</p>
+                        <a href="mailto:app.pickly.ai@gmail.com" class="text-brand font-bold hover:underline text-lg">
+                            <i class="fa-solid fa-envelope mr-2"></i>app.pickly.ai@gmail.com
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center text-white text-xl font-bold mb-4">
+                <i class="fa-solid fa-ghost mr-2 text-brand"></i> Pickly AI
+            </div>
+            <p class="text-sm mb-8">La forma inteligente de seleccionar tu mejor foto.</p>
+            <div class="text-xs border-t border-gray-800 pt-8">
+                &copy; <script>document.write(new Date().getFullYear())</script> Pickly AI. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Script simple para poner la fecha actual automáticamente
+        const dateElement = document.getElementById('date');
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = new Date().toLocaleDateString('es-ES', options);
+    </script>
+
+</body>
+</html>
