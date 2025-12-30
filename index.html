@@ -32,7 +32,10 @@
         }
     </script>
     
-    <style>
+    <style>html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Esto hace que el salto se detenga antes de llegar al borde, dejando espacio para el menú */
+}
         /* Animación suave para el logo */
         .ghost-float {
             animation: float 3s ease-in-out infinite;
@@ -58,9 +61,9 @@
                     <a href="#objetivos" class="text-gray-500 hover:text-brand transition">Usos</a>
                     <a href="#contacto" class="text-gray-500 hover:text-brand transition">Contacto</a>
                 </div>
-                <a href="#descargar" class="bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-full font-medium transition shadow-md">
-                    Descargar App
-                </a>
+                <a href="#zona-descarga" class="bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-full font-medium transition shadow-md">
+    Descargar App
+</a>
             </div>
         </div>
     </nav>
@@ -75,15 +78,18 @@
             <h1 class="text-[28px] md:text-6xl font-extrabold mb-4 leading-tight text-white">
     Elige tus Mejores Fotos<br>
     con IA
-</h1>
+<h1 class="text-[28px] md:text-6xl font-extrabold mb-4 leading-tight text-white">
+                Elige tus Mejores Fotos<br> con IA
+            </h1>
             <p class="text-xl md:text-2xl mb-8 font-light text-white/90">
                 La tecnología elige tu mejor foto en segundos. <br/><span class="font-bold">100% Gratis.</span>
             </p>
-            <p class="text-lg mb-10 max-w-2xl mx-auto text-white/80">
+            
+            <p id="zona-descarga" class="text-lg mb-10 max-w-2xl mx-auto text-white/80">
                 La forma inteligente de seleccionar tu mejor foto para cualquier propósito: citas, trabajo, redes sociales y más.
             </p>
 
-            <div id="descargar" class="flex flex-col sm:flex-row justify-center gap-4">
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#" class="bg-black text-white px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition shadow-lg w-full sm:w-auto">
                     <i class="fa-brands fa-apple text-3xl"></i>
                     <div class="text-left">
@@ -99,7 +105,6 @@
                     </div>
                 </a>
             </div>
-        </div>
         
         <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-50 rounded-t-[50px]"></div>
     </header>
