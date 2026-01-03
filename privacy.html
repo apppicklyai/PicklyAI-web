@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickly AI - Consigue más Matches en Tinder y Apps de Citas</title>
+    <title>Política de Privacidad - Pickly AI</title>
     <link rel="icon" type="image/png" href="favicon.PNG?v=2">
-    <meta name="description" content="Nuestra IA elige tu mejor foto para Tinder, Bumble y Hinge en segundos. 100% Gratis. Maximiza tus matches hoy con Pickly AI.">
+    <meta name="robots" content="noindex">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
                 extend: {
                     colors: {
                         brand: {
-                            DEFAULT: '#FF5A33', // Naranja vibrante para Pickly AI
-                            dark: '#E64A2E',
-                            light: '#FFF0ED'
+                            DEFAULT: '#FF6B00', // Tu naranja exacto
+                            dark: '#E66000',
+                            light: '#FFF4EB'
                         }
                     },
                     fontFamily: {
@@ -29,215 +29,117 @@
             }
         }
     </script>
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 100px;
-        }
-        .ghost-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
     <nav class="bg-white shadow-sm fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center">
-                    <img src="logo.png" alt="Pickly AI Logo" class="h-10 md:h-14 w-auto mr-2">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition">
+                    <img src="logo.png" alt="Pickly AI Logo" class="h-10 w-auto mr-2">
                     <span class="font-bold text-xl tracking-tight text-gray-900">Pickly<span class="text-brand text-xs align-top">AI</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#como-funciona" class="text-gray-500 hover:text-brand transition">Cómo funciona</a>
-                    <a href="#objetivos" class="text-gray-500 hover:text-brand transition">¿Por qué usarlo?</a>
-                    <a href="#contacto" class="text-gray-500 hover:text-brand transition">Contacto</a>
-                </div>
-                <a href="#zona-descarga" class="bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm md:text-base">
-                    Descargar App
+                </a>
+                <a href="index.html" class="text-gray-500 hover:text-brand font-medium flex items-center gap-2 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Volver
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-brand pt-32 pb-32 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 relative z-10 text-white">
+    <main class="flex-grow pt-32 pb-20">
+        <div class="max-w-3xl mx-auto px-4 bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
             
-            <div class="mb-6 ghost-float inline-block">
-                <img src="logo.png" alt="Pickly AI" class="h-40 md:h-48 w-auto">
+            <div class="border-b border-gray-200 pb-8 mb-8">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Política de Privacidad</h1>
+                <p class="text-gray-500 font-medium text-brand">Última actualización: 3 de enero de 2026</p>
             </div>
 
-            <h1 class="text-[28px] md:text-6xl font-extrabold mb-4 leading-tight text-white">
-                Multiplica tus Matches<br> con Pickly AI
-            </h1>
-            
-            <p class="text-xl md:text-2xl mb-8 font-light text-white/90">
-                La IA que analiza qué fotos te darán más citas. <br/><span class="font-bold">100% Gratis.</span>
-            </p>
-            
-            <p id="zona-descarga" class="text-lg mb-10 max-w-2xl mx-auto text-white/80">
-                No adivines qué foto poner en Tinder. Deja que Pickly AI elija la imagen que más atrae a tus potenciales matches.
-            </p>
-
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="bg-black text-white px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition shadow-lg w-full sm:w-auto">
-                    <i class="fa-brands fa-apple text-3xl"></i>
-                    <div class="text-left">
-                        <p class="text-xs">Descargar en</p>
-                        <p class="font-bold text-lg leading-none">App Store</p>
-                    </div>
-                </a>
-                <a href="#" class="bg-white text-gray-900 px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-100 transition shadow-lg w-full sm:w-auto">
-                    <i class="fa-brands fa-google-play text-3xl text-brand"></i>
-                    <div class="text-left">
-                        <p class="text-xs">DISPONIBLE EN</p>
-                        <p class="font-bold text-lg leading-none">Google Play</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section id="objetivos" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Qué busca Pickly AI?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    En las apps de citas, la primera impresión es la única. Analizamos los factores psicológicos que hacen que alguien deslice a la derecha.
+            <div class="prose prose-orange max-w-none text-gray-600 leading-relaxed">
+                <p class="mb-6 italic">
+                    La presente Política de Privacidad describe cómo la aplicación móvil <strong>Pickly AI</strong> (en adelante, la “Aplicación”) trata la información del usuario. El uso de la Aplicación implica la aceptación de esta Política.
                 </p>
-            </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-orange-400 text-center md:text-left">
-                    <div class="text-5xl mb-4">😊</div>
-                    <h3 class="text-xl font-bold mb-2">Atractivo Social</h3>
-                    <p class="text-gray-500 text-sm mb-4">Confianza y calidez</p>
-                    <p class="text-gray-600 mb-6">Identificamos las fotos donde tu sonrisa y mirada transmiten la mejor energía para una cita.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Mejorar Perfil →</a>
-                </div>
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. INFORMACIÓN QUE RECOPILAMOS</h2>
+                
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">1.1. Datos personales</h3>
+                <p class="mb-4">
+                    <strong>Pickly AI</strong> no recopila, almacena ni procesa datos personales identificativos del usuario. La Aplicación no requiere registro, inicio de sesión ni creación de cuentas.
+                </p>
 
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-brand text-center md:text-left">
-                    <div class="text-5xl mb-4">🔥</div>
-                    <h3 class="text-xl font-bold mb-2">Efecto 'Wow'</h3>
-                    <p class="text-gray-500 text-sm mb-4">Impacto inmediato</p>
-                    <p class="text-gray-600 mb-6">Filtramos fotos con mala luz para dejar solo las que impactan al primer segundo del swipe.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Destacar más →</a>
-                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">1.2. Imágenes</h3>
+                <p class="mb-4">Para el funcionamiento principal de la Aplicación, el usuario selecciona entre 2 y 5 imágenes desde la galería de su dispositivo. El tratamiento se realiza así:</p>
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li>Las imágenes seleccionadas se envían de forma <strong>temporal y cifrada</strong> a nuestro servidor.</li>
+                    <li>El servidor procesa las imágenes mediante un modelo de IA con el único fin de generar una puntuación.</li>
+                    <li>Una vez devuelto el resultado:
+                        <ul class="list-circle pl-5 mt-2 space-y-1">
+                            <li>Las imágenes se eliminan <strong>automáticamente e inmediatamente</strong> del servidor.</li>
+                            <li>No se almacenan ni conservan copias.</li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-rose-400 text-center md:text-left">
-                    <div class="text-5xl mb-4">🤳</div>
-                    <h3 class="text-xl font-bold mb-2">Análisis de Selfie</h3>
-                    <p class="text-gray-500 text-sm mb-4">Ángulos y estructura</p>
-                    <p class="text-gray-600 mb-6">Pickly AI te dice qué ángulo favorece más a tu rostro según la estructura facial y expresión.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Ver mi mejor ángulo →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">1.3. Permisos del dispositivo</h3>
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li>Acceso a la galería de fotos, exclusivamente para la selección de imágenes.</li>
+                    <li>Permiso de notificaciones, solo si el usuario decide habilitarlas.</li>
+                </ul>
 
-    <section id="como-funciona" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16">3 Pasos para tu Foto Ganadora</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-center">
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">1</div>
-                    <h3 class="text-xl font-bold mb-3">Sube tus Opciones</h3>
-                    <p class="text-gray-400">Sube de 2 a 5 fotos que estés dudando si poner en tu perfil de citas.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">2</div>
-                    <h3 class="text-xl font-bold mb-3">Análisis Pickly AI</h3>
-                    <p class="text-gray-400">Nuestro algoritmo analiza expresiones, fondo y atractivo visual en segundos.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">3</div>
-                    <h3 class="text-xl font-bold mb-3">Arrasa en Tinder</h3>
-                    <p class="text-gray-400">Pon la foto ganadora como principal y empieza a notar la diferencia en tus matches.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. FINALIDAD DEL TRATAMIENTO</h2>
+                <p class="mb-4">El tratamiento se limita a procesar las imágenes para generar la puntuación. Las imágenes <strong>no se utilizan</strong> para entrenar modelos de IA, mejorar algoritmos ni para fines comerciales.</p>
 
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12">Por qué elegir Pickly AI</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">🧠</div>
-                    <h4 class="font-bold text-lg mb-2">Psicología de Atracción</h4>
-                    <p class="text-sm text-gray-600">Basado en estudios sobre cómo percibimos la confianza y el atractivo en apps sociales.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">💖</div>
-                    <h4 class="font-bold text-lg mb-2">Hecho para Citas</h4>
-                    <p class="text-sm text-gray-600">Pickly AI se enfoca exclusivamente en lo que realmente funciona en Bumble y Tinder.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">🚀</div>
-                    <h4 class="font-bold text-lg mb-2">Más Matches, Más Rápido</h4>
-                    <p class="text-sm text-gray-600">No pierdas tiempo probando fotos. Ve directamente con la que te garantiza likes.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">🔒</div>
-                    <h4 class="font-bold text-lg mb-2">Privacidad Total</h4>
-                    <p class="text-sm text-gray-600">Tus fotos son privadas. Se analizan instantáneamente y no se guardan.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-lg mb-2">Puntuación Real</h4>
-                    <p class="text-sm text-gray-600">Recibe una puntuación del 1 al 100 basada en múltiples factores de éxito visual.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">✨</div>
-                    <h4 class="font-bold text-lg mb-2">100% Gratuito</h4>
-                    <p class="text-sm text-gray-600">Sin suscripciones premium ocultas. Úsalo cuantas veces quieras gratis.</p>
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. BASE LEGAL</h2>
+                <p class="mb-4">El tratamiento se fundamenta en el consentimiento del usuario al utilizar la Aplicación y en la ejecución del servicio solicitado.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. CUSTODIA Y COMUNICACIÓN</h2>
+                <p class="mb-4"><strong>Pickly AI</strong> no cede, comparte ni vende imágenes a terceros. Las fotografías se envían únicamente a nuestro servidor controlado.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. PROCESAMIENTO DE IMÁGENES</h2>
+                <p class="mb-2"><strong>Tiempo de conservación: 0 minutos.</strong></p>
+                <p class="mb-4">Las imágenes se eliminan de forma irreversible inmediatamente tras completarse el análisis.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. SEGURIDAD</h2>
+                <p class="mb-4">Aplicamos transmisión cifrada HTTPS/SSL y eliminación automática para garantizar que no exista almacenamiento permanente.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">7. DERECHOS DEL USUARIO</h2>
+                <p class="mb-4">Dado que no almacenamos datos personales ni conservamos copias de las imágenes, el usuario mantiene el control absoluto eliminando la App o revocando permisos.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">10. CONTACTO</h2>
+                <p class="mb-4">Dudas o consultas en:</p>
+                <div class="bg-brand-light p-4 rounded-xl border border-brand/20 inline-block">
+                    <a href="mailto:app.pickly.ai@gmail.com" class="text-brand font-bold hover:underline flex items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i> app.pickly.ai@gmail.com
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800" id="contacto">
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12 text-center md:text-left">
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center justify-center md:justify-start text-white text-xl font-bold mb-4">
                     <img src="logo.png" alt="Pickly Logo" class="h-8 w-auto mr-3"> Pickly AI
                 </div>
-                <p class="text-sm">La herramienta de IA diseñada para que tu perfil de citas destaque sobre el resto y consigas conexiones reales.</p>
+                <p class="text-sm">IA diseñada para que tu perfil de citas destaque y consigas conexiones reales.</p>
             </div>
             <div>
                 <h5 class="text-white font-bold mb-4">Legal</h5>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="privacy.html" class="hover:text-brand">Política de Privacidad</a></li>
-                    <li><a href="terms.html" class="hover:text-brand">Términos y Condiciones</a></li>
-                    <li><a href="cookies.html" class="hover:text-brand">Política de Cookies</a></li>
+                    <li><a href="privacy.html" class="text-brand font-bold">Política de Privacidad</a></li>
+                    <li><a href="terms.html" class="hover:text-brand">Términos</a></li>
                 </ul>
             </div>
             <div>
                 <h5 class="text-white font-bold mb-4">Contacto</h5>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand">app.pickly.ai@gmail.com</a></li>
-                    <li><a href="https://www.tiktok.com/@pickly_app" class="hover:text-brand">Tiktok</a></li>
+                    <li><a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand">Email</a></li>
                     <li><a href="https://www.instagram.com/pickly_app" class="hover:text-brand">Instagram</a></li>
                 </ul>
             </div>
         </div>
-        
         <div class="max-w-6xl mx-auto px-4 text-center border-t border-gray-800 pt-8">
-            <div class="flex justify-center mb-4">
-                <div class="flex items-center text-[10px] uppercase tracking-widest text-gray-500 border border-gray-700 px-3 py-1 rounded-md">
-                    <i class="fa-solid fa-shield-halved mr-2 text-brand"></i>
-                    Cumplimos con RGPD
-                </div>
-            </div>
-            <p class="text-xs text-gray-500">
-                &copy; 2025 Pickly AI. Todos los derechos reservados.
-            </p>
+            <p class="text-xs text-gray-500">&copy; 2025 Pickly AI. Todos los derechos reservados.</p>
         </div>
     </footer>
 
