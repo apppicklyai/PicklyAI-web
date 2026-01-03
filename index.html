@@ -1,50 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickly AI - Consigue más Matches en Tinder y Apps de Citas</title>
-    <link rel="icon" type="image/png" href="favicon.PNG?v=2">
-    <meta name="description" content="Nuestra IA elige tu mejor foto para Tinder, Bumble y Hinge en segundos. 100% Gratis. Maximiza tus matches hoy.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            DEFAULT: '#FF6B00', // El naranja solicitado
-                            dark: '#E66000',    // Un tono más oscuro para hover
-                            light: '#FFF0E5'    // Un tono muy claro para fondos suaves
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 100px;
-        }
-        .ghost-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
-</head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
     <nav class="bg-white shadow-sm fixed w-full z-50">
@@ -60,7 +13,7 @@
                     <a href="#contacto" class="text-gray-500 hover:text-brand transition">Contacto</a>
                 </div>
                 <a href="#zona-descarga" class="bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-full font-medium transition shadow-md text-sm md:text-base">
-                    Descargar App
+                    Probar Gratis
                 </a>
             </div>
         </div>
@@ -78,11 +31,11 @@
             </h1>
             
             <p class="text-xl md:text-2xl mb-8 font-light text-white/90">
-                La IA que analiza qué fotos te darán más citas. <br/><span class="font-bold">100% Gratis.</span>
+                Descubre tu mejor foto al instante. <br/><span class="font-bold">Empieza Gratis.</span>
             </p>
             
             <p id="zona-descarga" class="text-lg mb-10 max-w-2xl mx-auto text-white/80">
-                No adivines qué foto poner en Tinder. Deja que nuestra tecnología elija la imagen que más atrae a tus potenciales matches.
+                Analiza tus fotos con tecnología de IA y obtén un informe profesional para destacar en Tinder, Bumble y Hinge.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -104,66 +57,6 @@
         </div>
     </header>
 
-    <section id="objetivos" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Qué buscamos optimizar?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    En las apps de citas, la primera impresión es la única. Analizamos los factores psicológicos que hacen que alguien deslice a la derecha.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-orange-400 text-center md:text-left">
-                    <div class="text-5xl mb-4">😊</div>
-                    <h3 class="text-xl font-bold mb-2">Atractivo Social</h3>
-                    <p class="text-gray-500 text-sm mb-4">Confianza y calidez</p>
-                    <p class="text-gray-600 mb-6">Identificamos las fotos donde tu sonrisa y mirada transmiten la mejor energía.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Mejorar Perfil →</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-brand text-center md:text-left">
-                    <div class="text-5xl mb-4">🔥</div>
-                    <h3 class="text-xl font-bold mb-2">Efecto 'Wow'</h3>
-                    <p class="text-gray-500 text-sm mb-4">Impacto visual inmediato</p>
-                    <p class="text-gray-600 mb-6">Filtramos fotos borrosas o con mala luz para dejar solo las que impactan al primer segundo.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Destacar más →</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-yellow-500 text-center md:text-left">
-                    <div class="text-5xl mb-4">🤳</div>
-                    <h3 class="text-xl font-bold mb-2">Calidad del Selfie</h3>
-                    <p class="text-gray-500 text-sm mb-4">Ángulos y composición</p>
-                    <p class="text-gray-600 mb-6">Nuestra IA te dice qué ángulo favorece más a tu rostro según la estructura facial.</p>
-                    <a href="#zona-descarga" class="text-brand font-bold hover:underline">Ver mi mejor ángulo →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="como-funciona" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16">3 Pasos para tu Foto Ganadora</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-center">
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">1</div>
-                    <h3 class="text-xl font-bold mb-3">Sube tus Opciones</h3>
-                    <p class="text-gray-400">Sube de 2 a 5 fotos que estés dudando si poner en tu perfil de citas.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">2</div>
-                    <h3 class="text-xl font-bold mb-3">IA en Acción</h3>
-                    <p class="text-gray-400">Nuestro algoritmo analiza expresiones, fondo y atractivo visual en segundos.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-brand/50">3</div>
-                    <h3 class="text-xl font-bold mb-3">Arrasa en Tinder</h3>
-                    <p class="text-gray-400">Pon la foto ganadora como principal y empieza a notar la diferencia en tus matches.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-12">Diseñado para ayudarte a conectar</h2>
@@ -173,30 +66,35 @@
                     <h4 class="font-bold text-lg mb-2">Psicología de Atracción</h4>
                     <p class="text-sm text-gray-600">Basado en estudios sobre cómo percibimos la confianza y el atractivo en una foto de perfil.</p>
                 </div>
+                
                 <div class="bg-brand-light p-6 rounded-2xl border border-orange-100">
-                    <div class="text-3xl mb-3">💖</div>
-                    <h4 class="font-bold text-lg mb-2">Hecho para Citas</h4>
-                    <p class="text-sm text-gray-600">A diferencia de otras IAs, Pickly se enfoca en lo que realmente funciona en Bumble y Tinder.</p>
+                    <div class="text-3xl mb-3">📊</div>
+                    <h4 class="font-bold text-lg mb-2">Feedback Profesional</h4>
+                    <p class="text-sm text-gray-600">Desbloquea análisis detallados sobre iluminación, expresión y lenguaje corporal.</p>
                 </div>
+
                 <div class="bg-brand-light p-6 rounded-2xl border border-orange-100">
                     <div class="text-3xl mb-3">🚀</div>
                     <h4 class="font-bold text-lg mb-2">Más Likes, Más Rápido</h4>
-                    <p class="text-sm text-gray-600">No pierdas semanas probando fotos. Ve directamente con la que funciona.</p>
+                    <p class="text-sm text-gray-600">No pierdas semanas probando fotos. Identifica tu foto ganadora al instante.</p>
                 </div>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div class="text-3xl mb-3">✨</div>
+                    <h4 class="font-bold text-lg mb-2">Prueba Gratuita</h4>
+                    <p class="text-sm text-gray-600">Descarga la app y descubre cuál es tu mejor foto sin pagar nada. Tú decides si quieres el informe completo.</p>
+                </div>
+
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                     <div class="text-3xl mb-3">🔒</div>
                     <h4 class="font-bold text-lg mb-2">Privacidad Total</h4>
                     <p class="text-sm text-gray-600">Tus fotos son privadas. Se analizan para darte el resultado y no se guardan en servidores.</p>
                 </div>
+                
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-bold text-lg mb-2">Puntuación Real</h4>
-                    <p class="text-sm text-gray-600">Recibe una puntuación del 1 al 100 basada en múltiples factores de éxito.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-3xl mb-3">✨</div>
-                    <h4 class="font-bold text-lg mb-2">100% Gratuito</h4>
-                    <p class="text-sm text-gray-600">Sin suscripciones premium para ver tus mejores fotos. Úsalo cuantas veces quieras.</p>
+                    <div class="text-3xl mb-3">💖</div>
+                    <h4 class="font-bold text-lg mb-2">Optimizado para Apps</h4>
+                    <p class="text-sm text-gray-600">Pickly se enfoca específicamente en los algoritmos de Bumble, Tinder y Hinge.</p>
                 </div>
             </div>
         </div>
@@ -205,51 +103,11 @@
     <section class="py-20 bg-brand text-center text-white">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Quieres más Citas esta Semana?</h2>
-            <p class="text-xl mb-8 opacity-90">Deja de usar fotos que no te hacen justicia. Descarga Pickly AI y optimiza tu perfil ahora.</p>
+            <p class="text-xl mb-8 opacity-90">No dejes tu éxito al azar. Obtén tu análisis de fotos profesional hoy mismo.</p>
             <a href="#zona-descarga" class="bg-white text-brand font-bold py-4 px-10 rounded-full shadow-lg hover:bg-gray-100 transition inline-block">
-                Conseguir mejores fotos - Gratis
+                Descubrir mi foto ganadora - Gratis
             </a>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800" id="contacto">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12 text-center md:text-left">
-            <div class="col-span-1 md:col-span-2">
-                <div class="flex items-center justify-center md:justify-start text-white text-xl font-bold mb-4">
-                    <img src="logo.png" alt="Pickly Logo" class="h-8 w-auto mr-3"> Pickly AI
-                </div>
-                <p class="text-sm">La herramienta de inteligencia artificial diseñada para que tu perfil de citas destaque sobre el resto y consigas conexiones reales.</p>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-4">Legal</h5>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="privacy.html" class="hover:text-brand">Política de Privacidad</a></li>
-                    <li><a href="terms.html" class="hover:text-brand">Términos y Condiciones</a></li>
-                    <li><a href="cookies.html" class="hover:text-brand">Política de Cookies</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-4">Contacto</h5>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand">app.pickly.ai@gmail.com</a></li>
-                    <li><a href="https://www.tiktok.com/@pickly_app" class="hover:text-brand">Tiktok</a></li>
-                    <li><a href="https://www.instagram.com/pickly_app" class="hover:text-brand">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="max-w-6xl mx-auto px-4 text-center border-t border-gray-800 pt-8">
-            <div class="flex justify-center mb-4">
-                <div class="flex items-center text-[10px] uppercase tracking-widest text-gray-500 border border-gray-700 px-3 py-1 rounded-md">
-                    <i class="fa-solid fa-shield-halved mr-2 text-brand"></i>
-                    Cumplimos con RGPD
-                </div>
-            </div>
-            <p class="text-xs text-gray-500">
-                &copy; 2025 Pickly AI. Todos los derechos reservados.
-            </p>
-        </div>
-    </footer>
-
-</body>
-</html>
+    </body>
