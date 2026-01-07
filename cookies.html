@@ -4,73 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Cookies - Pickly AI</title>
+    <link rel="icon" type="image/png" href="favicon.PNG?v=2">
+    <meta name="robots" content="noindex">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="favicon.PNG">
+
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { brand: { DEFAULT: '#2ACAC6', dark: '#20A8A5' } } } }
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#FF6B00', // Tu naranja corporativo
+                            dark: '#E66000',
+                            light: '#FFF4EB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
         }
     </script>
+    
+    <style>
+        .legal-section { margin-bottom: 3rem; }
+        .legal-h2 { 
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: #111827; 
+            margin-bottom: 1.5rem; 
+            border-bottom: 2px solid #FF6B00; 
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .legal-p { margin-bottom: 1rem; line-height: 1.7; color: #4B5563; }
+        .legal-list { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #4B5563; }
+        .legal-list li { margin-bottom: 0.5rem; }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
     <nav class="bg-white shadow-sm fixed w-full z-50">
-        <div class="max-w-4xl mx-auto px-4 h-16 flex justify-between items-center">
-            <a href="index.html" class="flex items-center hover:opacity-80 transition">
-                <img src="logo.png" alt="Logo" class="h-10 w-auto mr-2">
-                <span class="font-bold text-xl tracking-tight text-gray-900">Pickly<span class="text-brand text-xs align-top">AI</span></span>
-            </a>
-            <a href="index.html" class="text-gray-500 hover:text-brand text-sm font-medium">Volver al inicio</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition">
+                    <img src="logo.png" alt="Pickly AI Logo" class="h-10 w-auto mr-2">
+                    <span class="font-bold text-xl tracking-tight text-gray-900">Pickly<span class="text-brand text-xs align-top">AI</span></span>
+                </a>
+                <a href="index.html" class="text-gray-500 hover:text-brand font-medium flex items-center gap-2 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+                </a>
+            </div>
         </div>
     </nav>
 
-    <main class="flex-grow pt-28 pb-16 px-4">
-        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
-            <h1 class="text-3xl font-extrabold text-gray-900 mb-8 border-b pb-4">Política de Cookies</h1>
+    <main class="flex-grow pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
             
-            <div class="space-y-8 text-gray-700">
-                <section>
-                    <h2 class="text-xl font-bold text-brand-dark mb-3">1. ¿Qué son las cookies?</h2>
-                    <p>Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando visitas casi cualquier página web. Su utilidad es que la web sea capaz de recordar tu visita cuando vuelvas a navegar por esa página.</p>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-bold text-brand-dark mb-3">2. Cookies utilizadas en este sitio</h2>
-                    <p>Pickly AI utiliza las siguientes cookies:</p>
-                    <ul class="list-disc ml-6 mt-2 space-y-2">
-                        <li><strong>Cookies técnicas:</strong> Son necesarias para el funcionamiento de la web (como recordar que has aceptado las políticas).</li>
-                        <li><strong>Cookies de análisis:</strong> (Si usas Google Analytics) Nos permiten cuantificar el número de usuarios y realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-bold text-brand-dark mb-3">3. Cómo desactivar las cookies</h2>
-                    <p>Puedes restringir, bloquear o borrar las cookies de Pickly AI o cualquier otra página web utilizando tu navegador. Cada navegador es diferente, aquí tienes los enlaces a los principales:</p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-sm text-center">
-                        <a href="https://support.google.com/chrome/answer/95647" class="p-2 border rounded hover:bg-gray-50">Chrome</a>
-                        <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" class="p-2 border rounded hover:bg-gray-50">Firefox</a>
-                        <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" class="p-2 border rounded hover:bg-gray-50">Safari</a>
-                        <a href="https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d" class="p-2 border rounded hover:bg-gray-50">Edge</a>
-                    </div>
-                </section>
+            <div class="mb-12 text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 uppercase">Política de Cookies</h1>
+                <div class="inline-block bg-brand-light text-brand font-bold px-4 py-2 rounded-full text-sm">
+                    Última actualización: 3 de enero de 2026
+                </div>
             </div>
+
+            <section class="legal-section">
+                <h2 class="legal-h2">1. ¿QUÉ SON LAS COOKIES?</h2>
+                <p class="legal-p">
+                    Las cookies son pequeños archivos de texto que se almacenan en su dispositivo al utilizar nuestra Aplicación o visitar nuestro sitio web. Ayudan a que el sistema funcione correctamente y permiten recordar sus preferencias de configuración (como el idioma o la aceptación de términos).
+                </p>
+            </section>
+
+            <section class="legal-section">
+                <h2 class="legal-h2">2. USO DE COOKIES EN PICKLY AI</h2>
+                <p class="legal-p">
+                    En coherencia con nuestra política de máxima privacidad, <strong>Pickly AI utiliza el mínimo de cookies posibles</strong>. Actualmente solo utilizamos:
+                </p>
+                <ul class="legal-list">
+                    <li><strong>Cookies Técnicas y Esenciales:</strong> Necesarias para gestionar la sesión de análisis y recordar que usted ha aceptado nuestras políticas legales. Sin estas cookies, la aplicación no puede funcionar correctamente.</li>
+                    <li><strong>Cookies de Personalización:</strong> Permiten guardar ajustes básicos de la interfaz del usuario.</li>
+                </ul>
+                <p class="legal-p font-medium text-gray-900">
+                    No utilizamos cookies de seguimiento publicitario (retargeting) ni vendemos su información a terceros a través de cookies.
+                </p>
+            </section>
+
+            <section class="legal-section">
+                <h2 class="legal-h2">3. COOKIES DE TERCEROS</h2>
+                <p class="legal-p">
+                    Al gestionar los pagos a través de <strong>Apple App Store</strong> y <strong>Google Play Store</strong>, dichas plataformas pueden utilizar sus propias cookies o tecnologías similares para procesar la transacción de forma segura. Le recomendamos revisar las políticas de cookies de Apple y Google para más información sobre su tratamiento.
+                </p>
+            </section>
+
+            <section class="legal-section">
+                <h2 class="legal-h2">4. GESTIÓN Y DESACTIVACIÓN</h2>
+                <p class="legal-p">
+                    Usted puede restringir o bloquear las cookies a través de los ajustes de su dispositivo móvil o navegador. Tenga en cuenta que si desactiva las cookies técnicas, la funcionalidad de análisis de imágenes podría verse afectada.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                    <a href="https://support.google.com/chrome/answer/95647" class="text-center p-3 border rounded-xl hover:bg-brand-light hover:border-brand transition text-xs font-bold uppercase tracking-wider">Chrome</a>
+                    <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" class="text-center p-3 border rounded-xl hover:bg-brand-light hover:border-brand transition text-xs font-bold uppercase tracking-wider">Safari</a>
+                    <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" class="text-center p-3 border rounded-xl hover:bg-brand-light hover:border-brand transition text-xs font-bold uppercase tracking-wider">Firefox</a>
+                    <a href="https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d" class="text-center p-3 border rounded-xl hover:bg-brand-light hover:border-brand transition text-xs font-bold uppercase tracking-wider">Edge</a>
+                </div>
+            </section>
+
+            <section class="legal-section">
+                <h2 class="legal-h2">5. CONTACTO</h2>
+                <p class="legal-p">Si tiene dudas sobre cómo usamos las cookies, puede escribirnos a:</p>
+                <a href="mailto:app.pickly.ai@gmail.com" class="inline-flex items-center justify-center bg-brand text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-brand-dark transition transform hover:-translate-y-1">
+                    <i class="fa-solid fa-envelope mr-2"></i> app.pickly.ai@gmail.com
+                </a>
+            </section>
         </div>
     </main>
 
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="flex justify-center items-center text-white text-xl font-bold mb-4">
-                <img src="logo.png" alt="Logo" class="h-8 w-auto mr-3"> Pickly AI
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-12 text-center md:text-left">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center justify-center md:justify-start text-white text-xl font-bold mb-4">
+                    <img src="logo.png" alt="Pickly Logo" class="h-8 w-auto mr-3"> Pickly AI
+                </div>
+                <p class="text-sm italic">"Tu privacidad es nuestra prioridad mientras optimizamos tu imagen digital."</p>
             </div>
-            <div class="flex justify-center mb-6">
-                <div class="flex items-center text-[10px] uppercase tracking-widest text-gray-500 border border-gray-700 px-3 py-1 rounded-md">
-                    <i class="fa-solid fa-shield-halved mr-2 text-brand"></i> Cumplimos con RGPD
+            <div>
+                <h5 class="text-white font-bold mb-4">Legal</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="privacy.html" class="hover:text-brand transition">Política de Privacidad</a></li>
+                    <li><a href="terms.html" class="hover:text-brand transition">Términos y Condiciones</a></li>
+                    <li><a href="cookies.html" class="text-brand font-bold">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4">Social</h5>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="https://www.tiktok.com/@pickly_app" class="hover:text-brand text-xl transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/pickly_app" class="hover:text-brand text-xl transition"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            <p class="text-xs">&copy; 2025 Pickly AI. Todos los derechos reservados.</p>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 text-center border-t border-gray-800 pt-8">
+            <p class="text-xs text-gray-500">
+                &copy; 2026 Pickly AI. Todos los derechos reservados.
+            </p>
         </div>
     </footer>
+
 </body>
 </html>
