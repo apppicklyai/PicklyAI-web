@@ -16,7 +16,7 @@
                 extend: {
                     colors: {
                         brand: {
-                            DEFAULT: '#00F0FF', // Tu Electric Cyan
+                            DEFAULT: '#00F0FF', // Electric Cyan
                             dark: '#00B8C4',
                             black: '#000000',
                             grey: '#161616'
@@ -32,7 +32,7 @@
     
     <style>
         html { scroll-behavior: smooth; }
-        /* El fondo de puntos */
+        /* Fondo de puntos tecnológicos */
         .bg-cyber { 
             background-color: #000000; 
             background-image: radial-gradient(#161616 1px, transparent 1px); 
@@ -41,7 +41,7 @@
         .glow-button:hover { box-shadow: 0 0 20px rgba(0, 240, 255, 0.4); }
         .straight-border { border-radius: 0 !important; }
         
-        /* SOLUCIÓN AL FONDO DEL LOGO: Elimina el negro de la imagen */
+        /* SOLUCIÓN AL FONDO DEL LOGO: Mezcla la imagen con el fondo */
         .logo-transparent {
             mix-blend-mode: screen;
         }
@@ -69,41 +69,48 @@
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-32 bg-cyber overflow-hidden border-b border-brand/10">
-        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+    <header class="relative pt-56 pb-40 bg-cyber overflow-hidden border-b border-brand/10">
+        <div class="max-w-5xl mx-auto px-4 relative z-10 text-center">
             
-            <div class="mb-10 inline-block">
-                <img src="logo.png" alt="Pickly AI" class="h-32 md:h-40 w-auto logo-transparent">
+            <div class="inline-flex items-center gap-2 px-3 py-1 border border-brand/30 mb-8 bg-brand/5">
+                <span class="w-2 h-2 bg-brand animate-pulse"></span>
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Pickly AI Engine v2.0</span>
             </div>
 
-            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-none tracking-tighter italic uppercase">
-                Multiplica tus Matches<br> con <span class="text-brand">IA AVANZADA</span>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter italic uppercase">
+                Multiplica tus <br>
+                <span class="text-brand text-6xl md:text-9xl">Matches</span>
             </h1>
             
-            <p class="text-lg md:text-xl mb-12 font-medium text-white/60 max-w-2xl mx-auto italic">
-                No elijas tus fotos al azar. Deja que nuestro algoritmo de análisis facial identifique tu "Winning Shot" al instante.
+            <p class="text-lg md:text-2xl mb-14 font-medium text-white/50 max-w-2xl mx-auto italic leading-relaxed">
+                Deja de adivinar. Nuestra IA analiza tus fotos y <br class="hidden md:block"> 
+                selecciona tu <span class="text-white border-b border-brand">Winning Shot</span> en segundos.
             </p>
 
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="bg-white text-black px-8 py-4 straight-border flex items-center justify-center gap-3 hover:bg-brand transition w-full sm:w-auto">
+            <div class="flex flex-col sm:flex-row justify-center gap-4" id="zona-descarga">
+                <a href="#" class="bg-white text-black px-10 py-5 straight-border flex items-center justify-center gap-3 hover:bg-brand transition-all duration-300 w-full sm:w-auto">
                     <i class="fa-brands fa-apple text-3xl"></i>
                     <div class="text-left">
-                        <p class="text-[10px] leading-none uppercase font-bold opacity-60">Descargar en</p>
+                        <p class="text-[10px] leading-none uppercase font-bold opacity-60">Get it on</p>
                         <p class="font-black text-xl leading-none tracking-tighter">App Store</p>
                     </div>
                 </a>
-                <a href="#" class="bg-brand-grey border border-white/10 text-white px-8 py-4 straight-border flex items-center justify-center gap-3 hover:border-brand transition w-full sm:w-auto">
+                <a href="#" class="bg-brand-grey border border-white/10 text-white px-10 py-5 straight-border flex items-center justify-center gap-3 hover:border-brand transition-all duration-300 w-full sm:w-auto">
                     <i class="fa-brands fa-google-play text-3xl text-brand"></i>
                     <div class="text-left">
-                        <p class="text-[10px] leading-none uppercase font-bold opacity-60">Disponible en</p>
+                        <p class="text-[10px] leading-none uppercase font-bold opacity-60">Get it on</p>
                         <p class="font-black text-xl leading-none tracking-tighter">Google Play</p>
                     </div>
                 </a>
             </div>
 
-            <p class="mt-8 text-brand text-xs font-black tracking-[0.2em] uppercase opacity-80">
-                <i class="fa-solid fa-bolt mr-2"></i> Pickly AI: PRUEBA GRATUITA DISPONIBLE
-            </p>
+            <div class="mt-12 flex items-center justify-center gap-4 opacity-60">
+                <div class="h-px w-12 bg-white/20"></div>
+                <p class="text-brand text-[11px] font-black tracking-[0.3em] uppercase">
+                    Prueba Gratuita Disponible
+                </p>
+                <div class="h-px w-12 bg-white/20"></div>
+            </div>
         </div>
     </header>
 
@@ -113,6 +120,7 @@
                 <h2 class="text-brand text-xs font-black tracking-[0.3em] uppercase mb-4">Módulos de Análisis</h2>
                 <h3 class="text-4xl font-black italic uppercase">¿Qué optimizamos?</h3>
             </div>
+
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">01</div>
@@ -120,12 +128,14 @@
                     <p class="text-white/50 text-sm leading-relaxed mb-6">Analizamos micro-facciones para detectar confianza y calidez en tu mirada.</p>
                     <div class="h-1 w-12 bg-brand/30"></div>
                 </div>
+
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">02</div>
                     <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic">Efecto 'WOW'</h3>
                     <p class="text-white/50 text-sm leading-relaxed mb-6">Filtramos iluminación y composición técnica para maximizar el impacto visual.</p>
                     <div class="h-1 w-12 bg-brand/30"></div>
                 </div>
+
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">03</div>
                     <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic">Composición Pro</h3>
@@ -136,20 +146,46 @@
         </div>
     </section>
 
+    <section id="como-funciona" class="py-24 border-y border-white/5 bg-cyber">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center mb-20 italic uppercase">Proceso de Análisis IA</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-brand text-5xl font-black mb-4">/01</div>
+                    <h3 class="text-lg font-black uppercase mb-2">Upload</h3>
+                    <p class="text-white/40 text-sm italic">Sube tus fotos a la nube cifrada.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-brand text-5xl font-black mb-4">/02</div>
+                    <h3 class="text-lg font-black uppercase mb-2">Free Scan</h3>
+                    <p class="text-white/40 text-sm italic">Tu foto nº1 es totalmente gratis.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-brand text-5xl font-black mb-4">/03</div>
+                    <h3 class="text-lg font-black uppercase mb-2">Full Elo</h3>
+                    <p class="text-white/40 text-sm italic">Desbloquea ranking y feedback experto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-brand-black py-16 border-t border-white/5" id="contacto">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="flex items-center">
-                <img src="logo.png" alt="Pickly Logo" class="h-10 w-auto mr-3 logo-transparent">
+                <img src="logo.png" alt="Pickly Logo" class="h-10 w-auto logo-transparent">
             </div>
+            
             <div class="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-white/40">
                 <a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand transition">Soporte</a>
                 <a href="#" class="hover:text-brand transition">Privacidad</a>
                 <a href="#" class="hover:text-brand transition">TikTok</a>
             </div>
+
             <p class="text-[10px] text-white/20 uppercase font-bold tracking-widest">
                 &copy; 2026 Pickly AI. SISTEMA ACTIVADO.
             </p>
         </div>
     </footer>
+
 </body>
 </html>
