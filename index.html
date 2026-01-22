@@ -204,18 +204,34 @@
         </div>
     </section>
 
-    <footer class="bg-brand-black py-16 border-t border-white/5" id="contacto">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="flex items-center">
-                <img src="logo.png" alt="Pickly Logo" class="h-12 w-auto logo-transparent">
+   <footer class="bg-brand-black py-12 md:py-16 border-t border-white/5" id="contacto">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-10">
+            
+            <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Pickly Logo" class="h-10 md:h-12 w-auto logo-transparent">
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="https://www.instagram.com/pickly_app" target="_blank" class="text-white/40 hover:text-brand transition text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@pickly_app" target="_blank" class="text-white/40 hover:text-brand transition text-xl">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
             </div>
-            <div class="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-white/40">
-                <a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand transition">Soporte</a>
-                <a href="privacy.html" class="hover:text-brand transition">Política de Privacidad</a>
-                <a href="terms.html" class="hover:text-brand transition">Términos y Condiciones</a>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/40 border-y border-white/5 py-8 w-full">
+                <a href="mailto:app.pickly.ai@gmail.com" class="hover:text-brand transition whitespace-nowrap">Soporte</a>
+                <a href="privacy.html" class="hover:text-brand transition whitespace-nowrap">Privacidad</a>
+                <a href="terms.html" class="hover:text-brand transition whitespace-nowrap">Términos</a>
+                <span class="hidden md:inline text-white/10">|</span>
+                <p class="text-white/20 whitespace-nowrap">© 2026 Pickly AI</p>
             </div>
-            <p class="text-[10px] text-white/20 uppercase font-bold tracking-widest">
-                &copy; 2026 Pickly AI.
+
+            <p class="text-[9px] text-brand/50 uppercase tracking-[0.3em] font-bold animate-pulse text-center">
+                Consigue tu primer análisis sin coste • Prueba gratuita disponible
             </p>
         </div>
     </footer>
