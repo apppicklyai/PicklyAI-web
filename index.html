@@ -40,7 +40,6 @@
         .glow-button:hover { box-shadow: 0 0 20px rgba(0, 240, 255, 0.4); }
         .straight-border { border-radius: 0 !important; }
         
-        /* SOLUCIÓN AL FONDO DEL LOGO: Mezcla con el fondo */
         .logo-transparent {
             mix-blend-mode: screen;
         }
@@ -56,8 +55,9 @@
                 </div>
                 
                 <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase opacity-70">
-                    <a href="#como-funciona" class="hover:text-brand transition">Cómo funciona</a>
-                    <a href="#objetivos" class="hover:text-brand transition">Objetivos</a>
+                    <a href="#objetivos" class="hover:text-brand transition">Tecnología</a>
+                    <a href="#proceso" class="hover:text-brand transition">Cómo funciona</a>
+                    <a href="#datos" class="hover:text-brand transition">Impacto</a>
                     <a href="#contacto" class="hover:text-brand transition">Contacto</a>
                 </div>
                 
@@ -113,29 +113,94 @@
         </div>
     </header>
 
-    <section id="objetivos" class="py-24 bg-brand-black">
+    <section id="datos" class="py-20 bg-brand-black border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl md:text-5xl font-black text-brand mb-2">3.5x</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold opacity-50">Más Matches</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-black text-white mb-2">10k+</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold opacity-50">Fotos Analizadas</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-black text-brand mb-2">98%</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold opacity-50">Precisión IA</p>
+                </div>
+                <div>
+                    <p class="text-4xl md:text-5xl font-black text-white mb-2">&lt;2s</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold opacity-50">Tiempo de Escaneo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="objetivos" class="py-32 bg-brand-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-20">
                 <h2 class="text-brand text-xs font-black tracking-[0.3em] uppercase mb-4">Módulos de Análisis</h2>
-                <h3 class="text-4xl font-black italic uppercase">¿Qué optimizamos?</h3>
+                <h3 class="text-4xl md:text-6xl font-black italic uppercase leading-none">¿Qué optimizamos?</h3>
             </div>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">01</div>
-                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic">Atractivo Social</h3>
-                    <p class="text-white/50 text-sm leading-relaxed mb-6">Analizamos micro-facciones para detectar confianza y calidez en tu mirada.</p>
+                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic text-brand">Atractivo Social</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Analizamos micro-facciones para detectar confianza y calidez en tu mirada. No es solo belleza, es conexión.</p>
                 </div>
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">02</div>
-                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic">Efecto 'WOW'</h3>
-                    <p class="text-white/50 text-sm leading-relaxed mb-6">Filtramos iluminación y composición técnica para maximizar el impacto visual.</p>
+                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic text-brand">Efecto 'WOW'</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Filtramos iluminación y composición técnica para maximizar el impacto visual en el primer segundo de scroll.</p>
                 </div>
                 <div class="bg-brand-grey p-10 straight-border border-l-4 border-brand hover:bg-white/5 transition group">
                     <div class="text-brand text-4xl mb-6 font-black opacity-40 group-hover:opacity-100 transition">03</div>
-                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic">Composición Pro</h3>
-                    <p class="text-white/50 text-sm leading-relaxed mb-6">Te sugerimos el ángulo ganador basado en tu estructura ósea facial.</p>
+                    <h3 class="text-xl font-black uppercase mb-4 tracking-tighter italic text-brand">Composición Pro</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Te sugerimos el ángulo ganador basado en tu estructura ósea facial detectada por nuestros puntos de control.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="proceso" class="py-32 bg-cyber border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-brand text-xs font-black tracking-[0.3em] uppercase mb-4">Pipeline</h2>
+                <h3 class="text-4xl font-black italic uppercase">3 Pasos al éxito</h3>
+            </div>
+            <div class="space-y-12">
+                <div class="flex items-start gap-8 border-b border-white/5 pb-12">
+                    <span class="text-brand font-black text-6xl opacity-20">01</span>
+                    <div>
+                        <h4 class="text-2xl font-black uppercase italic mb-2">Carga masiva</h4>
+                        <p class="text-white/40 italic">Sube hasta 10 fotos de tu galería. Nuestra IA las procesará en paralelo buscando patrones de éxito.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-8 border-b border-white/5 pb-12">
+                    <span class="text-brand font-black text-6xl opacity-20">02</span>
+                    <div>
+                        <h4 class="text-2xl font-black uppercase italic mb-2">Escaneo de Atributos</h4>
+                        <p class="text-white/40 italic">El algoritmo puntúa cada foto basándose en: Simetría, Iluminación, Calidad de fondo y Expresión facial.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-8">
+                    <span class="text-brand font-black text-6xl opacity-20">03</span>
+                    <div>
+                        <h4 class="text-2xl font-black uppercase italic mb-2">Resultado Final</h4>
+                        <p class="text-white/40 italic">Recibes tu ranking. La foto con mayor puntuación es tu pasaporte a más matches. ¡Garantizado!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-black">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <i class="fa-solid fa-shield-halved text-brand text-5xl mb-6"></i>
+            <h3 class="text-3xl font-black uppercase italic mb-6">Tu privacidad es nuestra prioridad</h3>
+            <p class="text-white/50 italic leading-relaxed">
+                No guardamos tus fotos. Una vez realizado el análisis, las imágenes se eliminan permanentemente de nuestros servidores. Tu identidad y tus datos están cifrados de extremo a extremo.
+            </p>
         </div>
     </section>
 
