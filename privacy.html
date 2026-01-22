@@ -41,7 +41,6 @@
         .straight-border { border-radius: 0 !important; }
         .logo-transparent { mix-blend-mode: screen; }
         
-        /* Estilos Legales Estilo Tech */
         .legal-h2 { 
             font-size: 1.25rem; 
             font-weight: 900; 
@@ -68,92 +67,96 @@
 <body class="bg-brand-black text-white font-sans flex flex-col min-h-screen">
 
     <nav class="bg-brand-black/80 backdrop-blur-md border-b border-white/5 fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-20 items-center">
-            <a href="index.html" class="flex items-center hover:opacity-80 transition">
-                <img src="logo.png" alt="Pickly AI Logo" class="h-12 w-auto logo-transparent">
-            </a>
-            <a href="index.html" class="text-white/50 hover:text-brand text-[10px] font-black uppercase tracking-widest flex items-center gap-2 transition">
-                <i class="fa-solid fa-arrow-left"></i> Volver al inicio
-            </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition">
+                    <img src="logo.png" alt="Pickly AI Logo" class="h-12 w-auto logo-transparent">
+                </a>
+                <a href="index.html" class="text-white/50 hover:text-brand text-[10px] font-black uppercase tracking-widest flex items-center gap-2 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <main class="flex-grow pt-40 pb-20 bg-cyber">
         <div class="max-w-4xl mx-auto px-6">
             
             <div class="mb-16">
                 <div class="inline-flex items-center gap-2 px-3 py-1 border border-brand/30 mb-6 bg-brand/5">
-                    <span class="w-2 h-2 bg-brand"></span>
-                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Documentación Legal</span>
+                    <span class="w-2 h-2 bg-brand animate-pulse"></span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Security Protocol</span>
                 </div>
                 <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter mb-4">
                     Política de <br><span class="text-brand">Privacidad</span>
                 </h1>
-                <p class="text-white/30 font-bold uppercase text-[10px] tracking-[0.2em]">Última actualización: 17 de enero de 2026</p>
+                <p class="text-white/30 font-bold uppercase text-[10px] tracking-[0.2em]">Última actualización: 22 de enero de 2026</p>
             </div>
 
             <div class="bg-brand-grey/50 border border-white/5 p-8 md:p-12 straight-border backdrop-blur-sm">
                 
                 <p class="legal-p text-lg text-white/80 italic border-b border-white/5 pb-8">
-                    En Pickly AI, el tratamiento de tu información es tan preciso como nuestro algoritmo. Esta política detalla cómo blindamos tu privacidad mientras optimizamos tus resultados.
+                    La presente Política describe cómo Pickly trata la información del usuario. El uso de la Aplicación implica la aceptación de este protocolo.
                 </p>
 
                 <section class="mt-12">
-                    <h2 class="legal-h2">01. Recopilación de Datos</h2>
+                    <h2 class="legal-h2">01. Información que recopilamos</h2>
                     
-                    <h3 class="legal-h3">1.1. Datos Personales</h3>
+                    <h3 class="legal-h3">1.1. Datos personales e identificativos</h3>
                     <p class="legal-p">
-                        Pickly AI opera bajo el principio de anonimato total. No solicitamos nombres, emails, números de teléfono ni registros. Tu identidad permanece fuera de nuestro alcance.
+                        Pickly no recopila, almacena ni procesa datos personales identificativos del usuario. La Aplicación no requiere registro, inicio de sesión ni creación de cuentas externas.
                     </p>
+
+                    <div class="bg-brand/5 border border-brand/20 p-6 mb-8">
+                        <h3 class="text-brand font-black text-sm uppercase mb-3 tracking-widest">[+] Data Onboarding</h3>
+                        <p class="legal-p text-sm mb-0">
+                            Para ofrecer una experiencia optimizada y fines estadísticos, Pickly almacena en su base de datos la información proporcionada voluntariamente durante el onboarding: 
+                            <span class="text-white italic">Finalidad, edad, sexo, orientación, nombre de usuario y número de matches semanales aproximados.</span>
+                        </p>
+                    </div>
 
                     <h3 class="legal-h3">1.2. Protocolo de Imágenes</h3>
                     <p class="legal-p">
-                        El tratamiento de tus fotografías sigue un ciclo de vida estrictamente efímero:
+                        El usuario selecciona entre <strong>2 y 5 imágenes</strong> de su galería. El flujo técnico es:
                     </p>
                     <ul class="legal-list">
-                        <li>Transmisión cifrada mediante túneles SSL/HTTPS.</li>
-                        <li>Procesamiento por el motor Pickly AI Engine v2.0 para generación de puntuación.</li>
-                        <li><strong>Eliminación inmediata:</strong> Las imágenes se borran de forma irreversible en el microsegundo posterior al envío de los resultados a tu dispositivo.</li>
-                        <li>Cero almacenamiento permanente. Cero copias de seguridad.</li>
+                        <li>Envío cifrado temporal al servidor.</li>
+                        <li>Procesamiento por IA para generar puntuación.</li>
+                        <li><strong>Retención: 0 minutos.</strong> Las imágenes se eliminan automática e inmediatamente del servidor tras devolver el resultado.</li>
+                        <li>No se conservan copias ni registros de las fotografías.</li>
                     </ul>
-                </section>
 
-                <section class="mt-12">
-                    <h2 class="legal-h2">02. Finalidad del Algoritmo</h2>
+                    <h3 class="legal-h3">1.3. Permisos y Datos Técnicos</h3>
                     <p class="legal-p">
-                        Tu información se procesa exclusivamente para proporcionarte el "Winning Shot". Pickly AI <strong>NO</strong> utiliza tus fotos para:
+                        Solicitamos acceso a la galería (para selección de fotos) y notificaciones (opcional). No utilizamos herramientas de analítica, monitorización de comportamiento ni crash analytics.
                     </p>
-                    <div class="grid md:grid-cols-2 gap-4 mb-8">
-                        <div class="bg-black/40 p-4 border border-white/5 text-[11px] font-bold uppercase tracking-wider text-white/40">
-                            [ ] Entrenar Modelos IA
-                        </div>
-                        <div class="bg-black/40 p-4 border border-white/5 text-[11px] font-bold uppercase tracking-wider text-white/40">
-                            [ ] Bases de datos externas
-                        </div>
-                        <div class="bg-black/40 p-4 border border-white/5 text-[11px] font-bold uppercase tracking-wider text-white/40">
-                            [ ] Perfiles comerciales
-                        </div>
-                        <div class="bg-black/40 p-4 border border-white/5 text-[11px] font-bold uppercase tracking-wider text-white/40">
-                            [ ] Venta a terceros
-                        </div>
-                    </div>
                 </section>
 
-                <section class="mt-12">
-                    <h2 class="legal-h2">03. Seguridad Blindada</h2>
+                <section class="mt-12 border-t border-white/5 pt-12">
+                    <h2 class="legal-h2">02. Finalidad del Tratamiento</h2>
                     <p class="legal-p">
-                        Nuestra infraestructura está alojada en servidores de alta seguridad dentro de la Unión Europea, cumpliendo estrictamente con el estándar RGPD. Implementamos medidas técnicas que garantizan que el procesamiento sea una "caja negra" donde solo tú ves los resultados finales.
+                        El tratamiento se limita a procesar las imágenes para generar la puntuación. <span class="text-white font-bold italic underline">Las imágenes NO se utilizan</span> para entrenar modelos de IA, mejorar algoritmos o fines publicitarios.
+                    </p>
+                </section>
+
+                <section class="mt-12 border-t border-white/5 pt-12">
+                    <h2 class="legal-h2">03. Seguridad e Infraestructura</h2>
+                    <p class="legal-p">
+                        Pickly no cede ni vende datos a terceros. Las fotografías solo viajan a nuestro servidor cifrado mediante HTTPS/SSL. Los datos del onboarding se utilizan internamente para mejorar tu perfil y generar estadísticas globales anónimas.
+                    </p>
+                </section>
+
+                <section class="mt-12 border-t border-white/5 pt-12">
+                    <h2 class="legal-h2">04. Derechos y Edad</h2>
+                    <p class="legal-p">
+                        El usuario mantiene el control total, pudiendo revocar permisos o eliminar la App en cualquier momento. La Aplicación no está dirigida a menores de <strong>16 años</strong>.
                     </p>
                 </section>
 
                 <section class="mt-12 border-t border-brand/20 pt-12 text-center">
-                    <h2 class="legal-h2 italic">Canal de Soporte</h2>
-                    <p class="legal-p italic mb-8 text-center mx-auto max-w-sm">
-                        ¿Tienes dudas sobre el cifrado o el procesamiento de datos? Contacta con nuestra unidad técnica.
-                    </p>
-                    <a href="mailto:app.pickly.ai@gmail.com" class="inline-flex items-center justify-center bg-brand text-black font-black uppercase italic px-10 py-5 straight-border hover:bg-white transition-all duration-300 group">
+                    <h2 class="legal-h2">Contacto</h2>
+                    <p class="legal-p italic mb-8">¿Dudas sobre el cifrado o tus datos?</p>
+                    <a href="mailto:app.pickly.ai@gmail.com" class="inline-flex items-center justify-center bg-brand text-black font-black uppercase italic px-10 py-5 straight-border hover:bg-white transition-all duration-300">
                         <i class="fa-solid fa-envelope mr-3 text-xl"></i> app.pickly.ai@gmail.com
                     </a>
                 </section>
@@ -164,11 +167,8 @@
 
     <footer class="bg-brand-black py-12 border-t border-white/5">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <div class="flex justify-center mb-6">
-                <img src="logo.png" alt="Pickly Logo" class="h-8 w-auto logo-transparent opacity-50">
-            </div>
             <p class="text-[10px] text-white/20 uppercase font-black tracking-[0.3em]">
-                &copy; 2026 Pickly AI. PRIVACIDAD GARANTIZADA POR SISTEMA.
+                &copy; 2026 Pickly AI. DATA PROTECTED.
             </p>
         </div>
     </footer>
