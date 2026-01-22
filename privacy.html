@@ -41,14 +41,18 @@
         .straight-border { border-radius: 0 !important; }
         .logo-transparent { mix-blend-mode: screen; }
         
+        /* Tipografía Legal Estilizada */
         .legal-h2 { 
-            font-size: 1.25rem; 
+            font-size: 1.25rem; /* 20px */
             font-weight: 900; 
             color: #00F0FF; 
             text-transform: uppercase;
             font-style: italic;
             margin-bottom: 1.5rem;
             letter-spacing: -0.025em;
+            display: inline-block;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+            padding-bottom: 0.5rem;
         }
         .legal-h3 { 
             font-size: 1rem; 
@@ -57,11 +61,15 @@
             text-transform: uppercase;
             margin-top: 2rem; 
             margin-bottom: 1rem; 
+            letter-spacing: 0.05em;
         }
-        .legal-p { margin-bottom: 1.5rem; line-height: 1.8; color: rgba(255,255,255,0.6); font-size: 0.95rem; }
-        .legal-list { list-style-type: none; margin-bottom: 1.5rem; color: rgba(255,255,255,0.6); }
-        .legal-list li { margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative; }
+        .legal-p { margin-bottom: 1.25rem; line-height: 1.7; color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .legal-list { list-style-type: none; margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .legal-list li { margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; }
         .legal-list li::before { content: ">"; position: absolute; left: 0; color: #00F0FF; font-weight: 900; }
+        
+        /* Cajas de énfasis */
+        .data-box { background: rgba(0, 240, 255, 0.03); border-left: 2px solid #00F0FF; padding: 1.5rem; margin-bottom: 1.5rem; }
     </style>
 </head>
 <body class="bg-brand-black text-white font-sans flex flex-col min-h-screen">
@@ -85,7 +93,7 @@
             <div class="mb-16">
                 <div class="inline-flex items-center gap-2 px-3 py-1 border border-brand/30 mb-6 bg-brand/5">
                     <span class="w-2 h-2 bg-brand animate-pulse"></span>
-                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Privacy Protocol v2.0</span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Legal Protocol V2.1</span>
                 </div>
                 <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter mb-4">
                     Política de <br><span class="text-brand">Privacidad</span>
@@ -95,87 +103,182 @@
 
             <div class="bg-brand-grey/50 border border-white/5 p-8 md:p-12 straight-border backdrop-blur-sm">
                 
-                <p class="legal-p text-lg text-white/80 italic border-b border-white/5 pb-8 mb-12">
-                    La presente Política de Privacidad describe cómo la aplicación móvil <strong>Pickly</strong> trata la información del usuario. El uso de la Aplicación implica la aceptación total de este protocolo.
+                <p class="legal-p text-lg text-white/90 italic border-b border-white/5 pb-8 mb-12">
+                    La presente Política de Privacidad describe cómo la aplicación móvil <strong>Pickly</strong> (en adelante, la “Aplicación”) trata la información del usuario. El uso de la Aplicación implica la aceptación expresa de esta Política.
                 </p>
 
-                <section class="legal-section">
+                <section class="mb-16">
+                    <h2 class="legal-h2">00. Responsable del tratamiento</h2>
+                    <p class="legal-p">
+                        El responsable del tratamiento de los datos es <strong>Pickly AI</strong>, proyecto operado desde la Unión Europea. <br>
+                        Para cualquier consulta relacionada con la privacidad o la protección de datos, puede contactar en:
+                    </p>
+                    <a href="mailto:app.pickly.ai@gmail.com" class="text-brand font-bold hover:underline">app.pickly.ai@gmail.com</a>
+                </section>
+
+                <section class="mb-16">
                     <h2 class="legal-h2">01. Información que recopilamos</h2>
                     
                     <h3 class="legal-h3">1.1. Datos personales</h3>
                     <p class="legal-p">
-                        Pickly no recopila, almacena ni procesa datos personales identificativos del usuario (como nombres reales, correos electrónicos o números de teléfono). La Aplicación no requiere registro, inicio de sesión ni creación de cuentas.
+                        Pickly no recopila datos personales identificativos directos, como nombre real, dirección postal, correo electrónico, número de teléfono o datos de pago. La Aplicación no requiere registro, inicio de sesión ni creación de cuentas.
                     </p>
-
-                    <div class="bg-brand/5 border-l-2 border-brand p-6 mb-8">
-                        <h3 class="text-brand font-black text-sm uppercase mb-3 tracking-widest">Protocolo de Onboarding</h3>
-                        <p class="legal-p text-sm mb-0">
-                            Para ofrecer una mejor experiencia y fines estadísticos, Pickly recopila en su base de datos la información proporcionada por el usuario durante el proceso de configuración inicial: 
-                            <span class="text-white italic">Finalidad, edad, sexo, orientación, nombre de usuario, y número de matches semanales aproximados.</span>
+                    
+                    <div class="data-box">
+                        <h4 class="text-brand font-black text-xs uppercase mb-3 tracking-widest">[+] Protocolo de Onboarding</h4>
+                        <p class="legal-p text-sm">
+                            Durante el proceso inicial de configuración, Pickly puede recopilar la información proporcionada voluntariamente por el usuario con fines estadísticos y de personalización básica del servicio. Esta información puede incluir:
+                        </p>
+                        <ul class="list-disc pl-4 text-sm text-white/60 space-y-1 mb-4">
+                            <li>Finalidad del uso (por ejemplo, citas, redes sociales o uso profesional)</li>
+                            <li>Rango de edad</li>
+                            <li>Sexo</li>
+                            <li>Orientación</li>
+                            <li>Nombre de usuario no identificativo</li>
+                            <li>Número aproximado de matches semanales</li>
+                        </ul>
+                        <p class="legal-p text-sm italic mb-0">
+                            Estos datos no permiten identificar directamente al usuario y se utilizan únicamente de forma agregada.
                         </p>
                     </div>
 
-                    <h3 class="legal-h3">1.2. Tratamiento de Imágenes</h3>
+                    <h3 class="legal-h3">1.2. Tratamiento de imágenes</h3>
                     <p class="legal-p">
-                        Para el funcionamiento principal, el usuario selecciona entre <strong>2 y 5 imágenes</strong> de su galería. El flujo técnico es el siguiente:
+                        Para el funcionamiento principal de la Aplicación, el usuario selecciona entre <strong>2 y 9 imágenes</strong> desde su galería. El flujo técnico es el siguiente:
                     </p>
                     <ul class="legal-list">
                         <li>Las imágenes se envían de forma temporal y cifrada a nuestro servidor.</li>
-                        <li>El servidor procesa las imágenes mediante IA con el único fin de generar una puntuación.</li>
-                        <li><strong>Retención: 0 minutos.</strong> Una vez generado el resultado, las imágenes se eliminan automática e inmediatamente. No se conservan copias ni registros.</li>
+                        <li>Las imágenes se procesan mediante un modelo de inteligencia artificial con el único fin de generar una puntuación y recomendación.</li>
+                        <li><strong>Retención: 0 minutos.</strong> Una vez generado y devuelto el resultado, las imágenes se eliminan automática e irreversiblemente.</li>
                     </ul>
+                    <p class="legal-p">Pickly no almacena, conserva ni mantiene copias de las imágenes procesadas.</p>
 
-                    <h3 class="legal-h3">1.3. Permisos y Datos Técnicos</h3>
+                    <h3 class="legal-h3">1.3. Permisos del dispositivo y datos técnicos</h3>
+                    <p class="legal-p">La Aplicación puede solicitar:</p>
+                    <ul class="legal-list">
+                        <li>Acceso a la galería de fotos (total o limitado), exclusivamente para permitir la selección de imágenes.</li>
+                        <li>Permiso para enviar notificaciones, de forma opcional.</li>
+                    </ul>
                     <p class="legal-p">
-                        Solicitamos acceso a la galería y notificaciones. Pickly <strong>no recopila</strong> datos técnicos, identificadores de dispositivo, estadísticas de uso ni historial de actividad. No utilizamos herramientas de monitorización ni analítica de comportamiento.
+                        Pickly no recopila identificadores de dispositivo, direcciones IP, estadísticas de uso, historial de actividad ni utiliza herramientas de analítica o seguimiento.
                     </p>
 
                     <h3 class="legal-h3">1.4. Información sobre fallos y compras</h3>
                     <p class="legal-p">
-                        No integramos sistemas de <em>crash analytics</em>. Las compras premium se gestionan exclusivamente vía <strong>Apple App Store</strong> y <strong>Google Play Store</strong>; Pickly no accede ni almacena datos de pago o facturación.
+                        Pickly no integra herramientas de análisis de errores o crash analytics. Las compras de servicios o packs de análisis se gestionan exclusivamente a través de <strong>Apple App Store</strong> y <strong>Google Play Store</strong>. Pickly no accede ni almacena datos bancarios, tarjetas de crédito ni información de facturación.
                     </p>
                 </section>
 
-                <section class="mt-12 border-t border-white/5 pt-12">
+                <section class="mb-16">
                     <h2 class="legal-h2">02. Finalidad del tratamiento</h2>
+                    <p class="legal-p">La información tratada se utiliza únicamente para:</p>
+                    <ul class="legal-list">
+                        <li>Procesar temporalmente las imágenes seleccionadas y generar una puntuación y recomendación.</li>
+                        <li>Analizar de forma agregada los datos de onboarding para mejorar la experiencia y el servicio.</li>
+                    </ul>
+                    <p class="legal-p text-white font-bold">Las imágenes y datos NO se utilizan para:</p>
+                    <ul class="legal-list">
+                        <li>Entrenar modelos de inteligencia artificial</li>
+                        <li>Crear bases de datos de imágenes</li>
+                        <li>Elaborar perfiles publicitarios</li>
+                        <li>Realizar análisis comerciales externos</li>
+                    </ul>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="legal-h2">03. Base legal del tratamiento</h2>
+                    <p class="legal-p">El tratamiento de la información se basa en:</p>
+                    <ul class="legal-list">
+                        <li>El consentimiento del usuario, otorgado al utilizar la Aplicación.</li>
+                        <li>La ejecución del servicio solicitado por el propio usuario.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="legal-h2">04. Custodia, cesión y comunicación de datos</h2>
                     <p class="legal-p">
-                        El tratamiento se limita a procesar imágenes para generar una recomendación y analizar los datos de onboarding para estadísticas internas de mejora de servicio. 
-                        <span class="text-white font-bold italic underline">Las imágenes NO se utilizan</span> para entrenar modelos de IA, mejorar algoritmos generales, crear perfiles publicitarios ni para fines comerciales ajenos al servicio.
+                        Pickly no cede, comparte ni vende datos personales ni imágenes a terceros. Las fotografías se envían únicamente a un servidor controlado por Pickly para permitir la funcionalidad principal. No se transmiten imágenes a plataformas de IA externas ni a proveedores ajenos al proyecto.
                     </p>
                 </section>
 
-                <section class="mt-12 border-t border-white/5 pt-12">
-                    <h2 class="legal-h2">03. Base legal</h2>
+                <section class="mb-16">
+                    <h2 class="legal-h2">05. Transferencias internacionales</h2>
                     <p class="legal-p">
-                        El tratamiento se fundamenta en el <strong>consentimiento del usuario</strong> al utilizar la Aplicación y en la ejecución del servicio solicitado de análisis temporal de imágenes.
+                        Pickly no realiza transferencias internacionales de datos. Los servidores utilizados se encuentran dentro del Espacio Económico Europeo (EEE).
                     </p>
                 </section>
 
-                <section class="mt-12 border-t border-white/5 pt-12">
-                    <h2 class="legal-h2">04. Custodia y comunicación</h2>
+                <section class="mb-16">
+                    <h2 class="legal-h2">06. Seguridad de la información</h2>
+                    <p class="legal-p">Aplicamos medidas técnicas y organizativas razonables para proteger la información tratada, entre ellas:</p>
+                    <ul class="legal-list">
+                        <li>Transmisión cifrada mediante HTTPS/SSL</li>
+                        <li>Eliminación automática e irreversible de imágenes tras el análisis</li>
+                        <li>Servidores seguros y protegidos</li>
+                        <li>Ausencia de almacenamiento permanente de imágenes</li>
+                    </ul>
+                    <p class="legal-p">No obstante, el usuario debe ser consciente de que ninguna transmisión de datos por Internet es completamente infalible.</p>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="legal-h2">07. Retención de datos</h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white/5 p-4 border border-brand/20">
+                            <h4 class="text-brand font-bold uppercase text-xs mb-2">Imágenes</h4>
+                            <p class="text-3xl font-black text-white mb-1">0 Minutos</p>
+                            <p class="text-xs text-white/50">Eliminación inmediata tras el procesamiento.</p>
+                        </div>
+                        <div class="bg-white/5 p-4 border border-white/10">
+                            <h4 class="text-brand font-bold uppercase text-xs mb-2">Datos Onboarding</h4>
+                            <p class="text-3xl font-black text-white mb-1">24 Meses</p>
+                            <p class="text-xs text-white/50">Almacenamiento agregado no identificativo.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="legal-h2">08. Redirección voluntaria a terceros</h2>
                     <p class="legal-p">
-                        Pickly no cede, comparte ni vende datos a terceros. Las fotografías se envían únicamente a nuestro servidor controlado para posibilitar la función principal. No se transmiten imágenes a proveedores externos ni plataformas de IA ajenas al proyecto.
+                        La Aplicación puede ofrecer al usuario la opción voluntaria de ser redirigido a profesionales externos (por ejemplo, expertos en imagen, fotografía o asesoramiento).
+                    </p>
+                    <p class="legal-p">
+                        Pickly no comparte datos personales ni imágenes con dichos terceros sin el consentimiento explícito del usuario. Cualquier interacción posterior se rige por las políticas de privacidad y condiciones del tercero correspondiente.
                     </p>
                 </section>
 
-                <section class="mt-12 border-t border-white/5 pt-12">
-                    <h2 class="legal-h2">05. Seguridad de la información</h2>
+                <section class="mb-16">
+                    <h2 class="legal-h2">09. Derechos del usuario</h2>
+                    <p class="legal-p">El usuario tiene derecho, conforme al Reglamento General de Protección de Datos (RGPD), a:</p>
+                    <ul class="legal-list">
+                        <li>Acceder a sus datos</li>
+                        <li>Solicitar su rectificación o supresión</li>
+                        <li>Limitar u oponerse a su tratamiento</li>
+                        <li>Solicitar la portabilidad de los datos</li>
+                    </ul>
                     <p class="legal-p">
-                        Aplicamos cifrado <strong>HTTPS/SSL</strong>, servidores seguros y eliminación irreversible. Aunque ninguna transmisión es infalible, adoptamos todas las medidas razonables para minimizar riesgos.
+                        Dado que Pickly no almacena datos personales identificativos directos ni crea cuentas de usuario, el ejercicio de algunos de estos derechos puede verse limitado en la práctica. El usuario puede retirar su consentimiento en cualquier momento eliminando la Aplicación. Asimismo, tiene derecho a presentar una reclamación ante la autoridad de control competente.
                     </p>
                 </section>
 
-                <section class="mt-12 border-t border-white/5 pt-12">
-                    <h2 class="legal-h2">06. Derechos y Menores</h2>
+                <section class="mb-16">
+                    <h2 class="legal-h2">10. Menores de edad</h2>
                     <p class="legal-p">
-                        El usuario puede revocar permisos o eliminar la App en cualquier momento. Al no almacenar datos personales identificativos, no existen datos susceptibles de rectificación según el RGPD. 
-                        <strong>La App no está dirigida a menores de 16 años.</strong>
+                        La Aplicación no está dirigida a menores de <strong>16 años</strong>. Al utilizar Pickly, el usuario declara cumplir con este requisito.
+                    </p>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="legal-h2">11. Cambios en esta Política</h2>
+                    <p class="legal-p">
+                        Pickly se reserva el derecho de modificar esta Política de Privacidad para adaptarla a cambios legales, técnicos o funcionales. La fecha de última actualización indica la versión vigente.
                     </p>
                 </section>
 
                 <section class="mt-12 border-t border-brand/20 pt-12 text-center">
-                    <h2 class="legal-h2">10. Contacto</h2>
-                    <p class="legal-p italic mb-8">Para dudas o consultas sobre este protocolo:</p>
+                    <h2 class="legal-h2">12. Contacto</h2>
+                    <p class="legal-p italic mb-8">
+                        Para cualquier duda o consulta relacionada con esta Política de Privacidad, puede contactar en:
+                    </p>
                     <a href="mailto:app.pickly.ai@gmail.com" class="inline-flex items-center justify-center bg-brand text-black font-black uppercase italic px-10 py-5 straight-border hover:bg-white transition-all duration-300">
                         <i class="fa-solid fa-envelope mr-3 text-xl"></i> app.pickly.ai@gmail.com
                     </a>
@@ -188,9 +291,10 @@
     <footer class="bg-brand-black py-12 border-t border-white/5">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <p class="text-[10px] text-white/20 uppercase font-black tracking-[0.3em]">
-                &copy; 2026 Pickly AI. SISTEMA DE PRIVACIDAD ACTIVADO.
+                &copy; 2026 Pickly AI. ALL RIGHTS RESERVED.
             </p>
         </div>
     </footer>
+
 </body>
 </html>
